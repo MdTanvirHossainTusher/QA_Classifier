@@ -18,8 +18,8 @@ inf_session = rt.InferenceSession('qa-classifier-quantized.onnx', providers=prov
 input_name = inf_session.get_inputs()[0].name
 output_name = inf_session.get_outputs()[0].name
 
-def classify_questions(description):
-  input_ids = tokenizer(description)['input_ids'][:512]
+def classify_questions(Question):
+  input_ids = tokenizer(Question)['input_ids'][:512]
   logits = inf_session.run([output_name], {input_name: [input_ids]})[0]
   logits = torch.FloatTensor(logits)
   probs = torch.sigmoid(logits)[0]
