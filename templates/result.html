@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Classifiers</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/premium-photo/question-mark-purple-3d-illustration_334978-255.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            margin-top: 200px;
+            color: white;
+            font-family: cursive;
+        }
+
+        .head b {
+            -webkit-text-fill-color: rgb(46, 49, 229);
+            -webkit-text-stroke-color: rgb(234, 220, 21);
+            -webkit-text-stroke-width: 4.00px;
+
+        }
+
+        .heading {
+            font-family: cursive;
+            font-size: 35px;
+            color: bisque;
+            -webkit-text-fill-color: rgb(68, 189, 90);
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 1.00px;
+            align-items: center;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+            font-size: 25px;
+            color: bisque;
+        }
+
+        form {
+            height: 500px;
+            width: 1000px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea {
+            height: 300px;
+            width: 600px;
+            font-size: 20px;
+            resize: none;
+            border-radius: 5px;
+        }
+
+        #tags {
+            height: 100px;
+        }
+
+        input {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(223, 79, 91);
+            color: antiquewhite;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <b>QA Classifier</b>
+    </div>
+
+    <div class="center">
+
+        <form action="/" method="">
+            <label for="text"><b class="heading">Question</b></label>
+            <textarea id="text" name="text" placeholder="">{{ input_text }}</textarea> <br />
+
+            <label for="text"><b class="heading">Question Categories</b></label>
+
+            <textarea id="tags" name="text" placeholder="">{{ output_text }}</textarea> <br />
+        </form>
+    </div>
+</body>
+
+</html>

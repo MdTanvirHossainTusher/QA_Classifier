@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Classifier</title>
+
+    <style>
+        body {
+            background-image: url("https://media.istockphoto.com/id/1362746343/vector/retro-poster-for-concept-design-faq-concept-ask-help-neon-sign-vector-background-blue.jpg?s=612x612&w=0&k=20&c=vtSrrCYr2vDvjU_oj2-oGSFkbacvtCJgq7lS0Jcr_B8=");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            margin-top: 200px;
+            color: white;
+            font-family: cursive;
+        }
+
+        .head b {
+            -webkit-text-fill-color: rgb(46, 49, 229);
+            -webkit-text-stroke-color: rgb(234, 220, 21);
+            -webkit-text-stroke-width: 4.00px;
+
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        form {
+            height: 500px;
+            width: 1000px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea {
+            height: 300px;
+            width: 600px;
+            font-size: 20px;
+            resize: none;
+            border-radius: 5px;
+        }
+
+        input {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(223, 79, 91);
+            color: antiquewhite;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body class="overlay box">
+    <div class="head">
+        <b>QA Classifier</b>
+    </div>
+
+    <div class="center">
+        <form action="/" method="post">
+            <textarea id="text" name="text" placeholder="Enter any programming related question..."></textarea> <br />
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>

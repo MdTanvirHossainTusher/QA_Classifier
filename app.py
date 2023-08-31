@@ -23,12 +23,12 @@ def index():
                 label_text = label_text + " | "
 
         return render_template(
-            "html/result.html",
+            "result.html",
             input_text=input_text,
             output_text=label_text,
         )
     else:
-        return render_template("html/index.html")
+        return render_template("index.html")
 
 
 def predict_categories(input_text):
