@@ -47,7 +47,7 @@ In the table I showed the multilabel accuracy, F1 score(macro & micro) for two m
   </tr>
 </table>
 
-From the above table, we see that, multilabel accuracy are very closed for both the models. But, the F1 Score(Micro & Macro) of `distilroberta-base` is higher than `distilbert-base-uncased` model's F1 Score. So, we can say that, `distilroberta-base` performed better for the given dataset.
+From the above table, we see that, multilabel accuracy are very closed for both the models. But, the F1 Score(Micro & Macro) of `distilroberta-base` is higher than `distilbert-base-uncased` model's F1 Score. So, we can say that, `distilroberta-base` performed slightly better for the given dataset.
 
 # Model Compression and ONNX Inference
 The trained model has a memory of 300+ MB. I compressed this model using ONNX quantization and brought it to ~78.8 MB.
