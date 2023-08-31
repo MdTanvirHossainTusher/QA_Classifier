@@ -24,7 +24,30 @@ Initially there were 10634 different categories in the dataset. After some analy
 Finetuned a distilrobera-base and distilbert-base-uncased model from HuggingFace Transformers using Fastai and Blurr. The model training notebook can be viewed at `notebooks` folder of this branch.
 
 # Result Analysis
+In the table I showed the multilabel accuracy, F1 score(macro & micro) for two models.
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Accuracy_multi</th>
+    <th>F1 Score(Micro)</th>
+    <th>F1 Score(Macro)</th>
+  </tr>
+  
+  <tr>
+    <td>distilroberta-base</td>
+    <td>98.4</td>
+    <td>67.03</td>
+    <td>53.34</td>
+  </tr>
+  <tr>
+    <td>distilbert-base-uncased</td>
+    <td>98.3</td>
+    <td>64.44</td>
+    <td>52.74</td>
+  </tr>
+</table>
 
+From the above table, we see that, multilabel accuracy are very closed for both the models. But, the F1 Score(Micro & Macro) of `distilroberta-base` is higher than `distilbert-base-uncased` model's F1 Score. So, we can say that, `distilroberta-base` performed better for the given dataset.
 
 # Model Compression and ONNX Inference
 The trained model has a memory of 300+ MB. I compressed this model using ONNX quantization and brought it to ~78.8 MB.
