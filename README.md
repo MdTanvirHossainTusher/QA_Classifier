@@ -9,3 +9,16 @@ Here I attached multi-label question categories/tags classifier models huggingfa
 
 # Build and Run
 Run `python app.py` command to run the app. Go to the required localhost url. Now submit a programming related question and see the predicted category/categories.
+
+# To deploy on `render.com`
+
+1. Create the docker file as `Dockerfile` and write those code as it is.
+2. Create a `requirements.txt` file and make you this file contains these two libraries-
+
+    Flask==2.0.1
+    gunicorn==20.1.0
+
+3. Build the Docker Image with `docker build -t flask-app .` command.
+4. Run the Docker Container with `docker run -p 8000:8000 flask-app` command. 
+5. Access Your Application on `http://localhost:8000`
+6. Deploy the app on render. Use `gunicorn app:app` on the `Start Command` field. Here, the left app `app:app` indicates the `app.py` file.
