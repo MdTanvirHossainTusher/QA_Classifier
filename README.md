@@ -56,11 +56,11 @@ The trained model has a memory of 300+ MB. I compressed this model using ONNX qu
 
 The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or see live [here.](https://huggingface.co/spaces/MdTanvirHossain/QA_Classifier)
 
-<img src="deployment/gradio_app_2.PNG" alt="Girl in a jacket" style="width:1699px;height:397px;"> </br>
+<img src="deployment/gradio_app_2.PNG" alt="Girl in a jacket" style="width:1600px;height:500px;"> </br>
 
 
 # Web Deployment
 Deployed a Flask App built to take question description and show the categories as output. Check `flask` branch for the details. The website is live [here.](https://multilabel-question-category-classifier.onrender.com)
 </br></br>
-<img src="deployment/flask_app_home.PNG" alt="Girl in a jacket" style="width:600px;height:300px;"></br></br>
-<img src="deployment/flask_app_result.PNG" alt="Girl in a jacket" style="width:600px;height:300px;">
+<img src="deployment/flask_app_home.PNG" alt="Girl in a jacket" style="width:1000px;height:500px;"></br></br>
+<img src="deployment/flask_app_result.PNG" alt="Girl in a jacket" style="width:1000px;height:500px;">
