@@ -56,7 +56,7 @@ The trained model has a memory of 300+ MB. I compressed this model using ONNX qu
 
 The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder or see live [here.](https://huggingface.co/spaces/MdTanvirHossain/QA_Classifier)
 
-<img src="deployment/gradio_app_2.PNG" alt="Girl in a jacket" style="width:1600px;height:500px;"> </br>
+<img src="deployment/gradio_app_2.PNG" alt="Girl in a jacket" style="width:1600px;height:400px;"> </br>
 
 
 # Web Deployment
