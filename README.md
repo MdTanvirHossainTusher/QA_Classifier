@@ -21,4 +21,4 @@ Run `python app.py` command to run the app. Go to the required localhost url. No
 4. Run the Docker Container with `docker run -p 8000:8000 flask-app` command. 
 5. Access Your Application on `http://localhost:8000`
 6. Deploy the app on render. Use `gunicorn app:app` on the `Start Command` field. Here, the left app `app:app` indicates the `app.py` file.
-7. Go the render url of you app. See your app on live.
+7. Go the render url of you app. See the app live on [here.](https://multilabel-question-category-classifier.onrender.com/)
