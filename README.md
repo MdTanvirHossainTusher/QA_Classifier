@@ -1,4 +1,4 @@
-# MultiLabel-Book-Genre-Classifier(QA_Classifier)
+# MultiLabel-Question-Category-Classifier(QA_Classifier)
 
 A text classification model from data collection, model training, and deployment.
 The model can classify 69 different types of questions categories.
